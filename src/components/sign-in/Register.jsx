@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./SignIn.css";
 import { createUser, getUserByEmail } from "../../services/userServices";
 
@@ -99,6 +99,9 @@ export const Register = (props) => {
             </div>
           </fieldset>
         </form>
+        <p>
+          Already a user? <Link to="/login">Sign in here</Link>
+        </p>
       </main>
     </div>
   );
