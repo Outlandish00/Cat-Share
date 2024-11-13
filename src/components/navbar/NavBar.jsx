@@ -10,7 +10,7 @@ export const NavBar = () => {
         <Link to="/home-page">Home</Link>
       </li>
       <li className="navbar-item">
-        <Link to="/create-catprofile"> Create a Cat Profile</Link>
+        <Link to="/add-catprofile"> Create a Cat Profile</Link>
       </li>
       {localStorage.getItem("catShare_user") ? (
         <li className="navbar-item">

@@ -95,6 +95,20 @@
       "id": 12
     }
   ],
+  "catSexes": [
+    {
+      "id": 1,
+      "type": "Male"
+    },
+    {
+      "id": 2,
+      "type": "Female"
+    },
+    {
+      "id": 3,
+      "type": "Prefer Not To Say"
+    }
+  ],
   "catEntries": [
     {
       "id": 1,
@@ -106,7 +120,7 @@
       "isPublic": true,
       "catBreedId": 1,
       "userId": 1,
-      "FeedingScheduleId": 2
+      "feedingScheduleId": 2
     },
     {
       "id": 2,
@@ -118,7 +132,7 @@
       "isPublic": false,
       "catBreedId": 2,
       "userId": 2,
-      "FeedingScheduleId": 1
+      "feedingScheduleId": 1
     },
     {
       "id": 3,
@@ -130,7 +144,7 @@
       "isPublic": true,
       "catBreedId": 3,
       "userId": 3,
-      "FeedingScheduleId": 3
+      "feedingScheduleId": 3
     },
     {
       "id": 4,
@@ -142,7 +156,7 @@
       "isPublic": true,
       "catBreedId": 4,
       "userId": 4,
-      "FeedingScheduleId": 2
+      "feedingScheduleId": 2
     },
     {
       "id": 5,
@@ -154,7 +168,7 @@
       "isPublic": true,
       "catBreedId": 5,
       "userId": 5,
-      "FeedingScheduleId": 4
+      "feedingScheduleId": 4
     },
     {
       "id": 6,
@@ -166,7 +180,31 @@
       "isPublic": true,
       "catBreedId": 1,
       "userId": 1,
-      "FeedingScheduleId": 2
+      "feedingScheduleId": 2
+    },
+    {
+      "id": 7,
+      "name": "Chowder",
+      "weight": 340,
+      "age": 1,
+      "isSocial": false,
+      "isPublic": true,
+      "catBreedId": 1,
+      "userId": 11,
+      "feedingScheduleId": 0,
+      "sex": 1
+    },
+    {
+      "id": 8,
+      "name": "Jasper",
+      "weight": 100,
+      "age": 1,
+      "isSocial": false,
+      "isPublic": true,
+      "catBreedId": 1,
+      "userId": 11,
+      "feedingScheduleId": 0,
+      "sex": 1
     }
   ],
   "catBreeds": [
