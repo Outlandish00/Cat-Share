@@ -4,22 +4,24 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import { SignIn } from "./components/sign-in/SignIn";
 import { Register } from "./components/sign-in/Register";
 import { HomePage } from "./components/home-page/HomePage";
+import { NavBar } from "./components/navbar/NavBar";
+import { Authorized } from "./views/Authorized";
+import { ApplicationViews } from "./views/ApplicationViews";
 
 function App() {
   return (
     <Routes>
+      <Route path="/login" element={<SignIn />} />
+      <Route path="/register" element={<Register />} />
+
       <Route
-        path="/"
+        path="*"
         element={
-          <>
-            <Outlet />
-          </>
+          <Authorized>
+            <ApplicationViews></ApplicationViews>
+          </Authorized>
         }
-      >
-        <Route index element={<SignIn />} />
-        <Route path="register" element={<Register />} />
-        <Route path="home-page" element={<HomePage />} />
-      </Route>
+      />
     </Routes>
   );
 }
