@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Outlet, Route, Routes } from "react-router-dom";
 import { NavBar } from "../components/navbar/NavBar";
 import { HomePage } from "../components/home-page/HomePage";
+import { AddCatProfile } from "../components/cat-profiles/AddCatProfile";
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
@@ -25,6 +26,10 @@ export const ApplicationViews = () => {
         }
       >
         <Route path="home-page" element={<HomePage />} />
+        <Route
+          path="add-catprofile"
+          element={<AddCatProfile currentUser={currentUser} />}
+        />
       </Route>
     </Routes>
   );
