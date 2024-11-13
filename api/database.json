@@ -86,6 +86,13 @@
       "email": "example@example.com",
       "password": "examplePassword",
       "id": 11
+    },
+    {
+      "userName": "LyndaByars",
+      "profilePic": "https://imgur.com/a/g8SCPmS",
+      "email": "supercoolemail@cool.com",
+      "password": "abc123",
+      "id": 12
     }
   ],
   "catEntries": [
@@ -96,7 +103,7 @@
       "age": 2,
       "isSocial": false,
       "isFixed": true,
-      "iaPublic": true,
+      "isPublic": true,
       "catBreedId": 1,
       "userId": 1,
       "FeedingScheduleId": 2
@@ -144,10 +151,22 @@
       "age": 1,
       "isSocial": false,
       "isFixed": false,
-      "isPublic": false,
+      "isPublic": true,
       "catBreedId": 5,
       "userId": 5,
       "FeedingScheduleId": 4
+    },
+    {
+      "id": 6,
+      "name": "Oreo",
+      "weight": 20,
+      "age": 2,
+      "isSocial": false,
+      "isFixed": true,
+      "isPublic": true,
+      "catBreedId": 1,
+      "userId": 1,
+      "FeedingScheduleId": 2
     }
   ],
   "catBreeds": [
