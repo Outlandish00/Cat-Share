@@ -93,6 +93,27 @@
       "email": "supercoolemail@cool.com",
       "password": "abc123",
       "id": 12
+    },
+    {
+      "userName": "GregKorte",
+      "profilePic": "https://imgur.com/a/g8SCPmS",
+      "email": "definitelyGreg@Greg.com",
+      "password": "Greg",
+      "id": 13
+    },
+    {
+      "userName": "Askljdhkjas",
+      "profilePic": "https://imgur.com/a/g8SCPmS",
+      "email": "asdasd@Greg.com",
+      "password": "asdasd",
+      "id": 14
+    },
+    {
+      "userName": "asdsa",
+      "profilePic": "https://imgur.com/a/g8SCPmS",
+      "email": "asdasd@greg.com",
+      "password": "asdasd",
+      "id": 15
     }
   ],
   "catSexes": [
@@ -178,13 +199,13 @@
     {
       "id": 7,
       "name": "Chowder",
-      "weight": 340,
-      "age": 1,
+      "weight": 100,
+      "age": 200,
       "isSocial": false,
+      "isFixed": true,
       "isPublic": true,
       "catBreedId": 1,
       "userId": 11,
-      "feedingScheduleId": 0,
       "catSexId": 1
     },
     {
@@ -193,6 +214,7 @@
       "weight": 100,
       "age": 1,
       "isSocial": false,
+      "isFixed": true,
       "isPublic": true,
       "catBreedId": 1,
       "userId": 11,
@@ -200,14 +222,26 @@
       "catSexId": 1
     },
     {
-      "id": 9,
-      "name": "Deletion",
-      "weight": 125,
-      "age": 1000,
+      "id": 10,
+      "name": "Death, Destroyers of Worlds",
+      "weight": 0,
+      "age": 1000000,
       "isSocial": false,
       "isFixed": true,
       "isPublic": true,
-      "catBreedId": 18,
+      "catBreedId": 15,
+      "userId": 11,
+      "catSexId": 1
+    },
+    {
+      "id": 11,
+      "name": "Deletion",
+      "weight": 100,
+      "age": 100,
+      "isSocial": false,
+      "isFixed": true,
+      "isPublic": true,
+      "catBreedId": 1,
       "userId": 11,
       "feedingScheduleId": 0,
       "catSexId": 2

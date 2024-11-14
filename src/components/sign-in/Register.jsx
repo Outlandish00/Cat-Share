@@ -24,7 +24,7 @@ export const Register = (props) => {
           })
         );
 
-        navigate("/");
+        navigate("/home-page");
       }
     });
   };
