@@ -21,3 +21,15 @@ export const addCatProfile = (catProfile) => {
     body: JSON.stringify(catProfile),
   });
 };
+
+export const getCatProfileByIdWithBreedandSex = (catId) => {
+  return fetch(
+    `http://localhost:8088/catEntries/${catId}?_expand=catBreed&_expand=catSex`
+  ).then((res) => res.json());
+};
+
+export const deleteCatProfile = (catId) => {
+  return fetch(`http://localhost:8088/catEntries/${catId}`, {
+    method: "DELETE",
+  });
+};
