@@ -29,6 +29,11 @@ export const CatDetails = ({ currentUser }) => {
       <div className="cat-breed">
         {currentCatProfile.catBreed?.name || "Loading Cat Breed..."}
       </div>
+      <div className="cat-fixed">
+        {currentCatProfile.isFixed
+          ? "This cat IS fixed"
+          : "This cat is NOT fixed."}
+      </div>
       {currentCatProfile.isSocial
         ? "This cat IS social"
         : "This cat is NOT social"}

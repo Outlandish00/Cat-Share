@@ -63,7 +63,9 @@ export const EditCatProfile = () => {
       weight: currentCatProfile.weight,
       age: currentCatProfile.age,
       isSocial: currentCatProfile.isSocial,
+      isFixed: currentCatProfile.isFixed,
       isPublic: currentCatProfile.isPublic,
+      catBreedId: currentCatProfile.catBreedId,
       userId: currentCatProfile.userId,
       catSexId: currentCatProfile.catSexId,
     };

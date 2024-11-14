@@ -8,6 +8,8 @@ fieldset {
   height: 50rem;
   border-radius: 20%;
   background-color: #dec5e3;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-login {
@@ -23,27 +25,26 @@ fieldset {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 5rem;
+  margin-top: 20px;
 }
 
 .cat-share-logo {
   display: flex;
   width: 250px;
   align-self: center;
-  justify-content: flex-end;
 }
 
 .log-in-header {
   display: flex;
   justify-content: center;
-  margin-top: 6rem;
-  margin-left: 10rem;
+  align-items: center;
+  margin: 0;
+  margin-top: 100px;
 }
 
 .log-in-header h1 {
   color: black;
   margin: 0;
-  margin-top: 3rem;
   font-size: 8rem;
 }
 
@@ -60,7 +61,6 @@ fieldset {
 .bottom-half-form {
   display: flex;
   flex-direction: column;
-  margin-left: 5rem;
   color: black;
 }
 
@@ -87,8 +87,10 @@ body {
   display: flex;
   background-color: white;
   color: black;
-  height: 30px;
   align-items: center;
+  height: 40px; /* Set a consistent height */
+  width: 250px;
+  border-radius: 10px;
 }
 
 .login-btn {

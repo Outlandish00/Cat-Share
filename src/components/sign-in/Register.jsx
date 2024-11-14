@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./SignIn.css";
+import "./Register.css";
 import { createUser, getUserByEmail } from "../../services/userServices";
+import CatShareLogo from "../../assets/CatShareLogoNoBackground.png";
 
 export const Register = (props) => {
   const [customer, setCustomer] = useState({
@@ -24,7 +25,7 @@ export const Register = (props) => {
           })
         );
 
-        navigate("/");
+        navigate("/home-page");
       }
     });
   };
@@ -49,13 +50,21 @@ export const Register = (props) => {
   };
 
   return (
-    <div className=".container-login">
+    <div className="container-register">
+      <div className="register-header">
+        <h1>Welcome to</h1>
+        <img
+          className="cat-share-logo"
+          src={CatShareLogo}
+          alt="Welcome to Cat Share!"
+        />
+      </div>
       <main style={{ textAlign: "center" }}>
-        <form className="form-login" onSubmit={handleRegister}>
-          <h1>CatShare</h1>
+        <form className="form-register" onSubmit={handleRegister}>
           <h2>Please Register</h2>
           <fieldset>
-            <div className="form-group">
+            <div className="register-form-group">
+              <h3>Username:</h3>
               <input
                 onChange={updateCustomer}
                 type="text"
@@ -68,7 +77,8 @@ export const Register = (props) => {
             </div>
           </fieldset>
           <fieldset>
-            <div className="form-group">
+            <div className="register-form-group">
+              <h3>Email:</h3>
               <input
                 onChange={updateCustomer}
                 type="email"
@@ -80,7 +90,8 @@ export const Register = (props) => {
             </div>
           </fieldset>
           <fieldset>
-            <div className="form-group">
+            <div className="register-form-group">
+              <h3>Password:</h3>
               <input
                 onChange={updateCustomer}
                 type="password"
@@ -92,17 +103,17 @@ export const Register = (props) => {
             </div>
           </fieldset>
           <fieldset>
-            <div className="form-group">
+            <div className="register-form-group">
               <button className="login-btn btn-info" type="submit">
                 Register
               </button>
             </div>
           </fieldset>
         </form>
-        <p>
-          Already a user? <Link to="/login">Sign in here</Link>
-        </p>
       </main>
+      <p>
+        Already a user? <Link to="/login">Sign in here</Link>
+      </p>
     </div>
   );
 };
