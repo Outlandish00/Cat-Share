@@ -35,7 +35,15 @@ export const CatDetails = ({ currentUser }) => {
       {currentUser.id === currentCatProfile.userId ? (
         <>
           <div className="edit-button-container">
-            <button className="edit-button"> Edit Profile</button>
+            <button
+              className="edit-button"
+              onClick={() => {
+                navigate(`/home-page/${currentCatProfile.id}/edit`);
+              }}
+            >
+              {" "}
+              Edit Profile
+            </button>
           </div>
           <div className="delete-button">
             <button

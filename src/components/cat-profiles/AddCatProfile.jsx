@@ -16,6 +16,7 @@ export const AddCatProfile = ({ currentUser }) => {
     weight: 0,
     age: 0,
     isSocial: false,
+    isFixed: false,
     isPublic: false,
     catBreedId: 0,
     userId: 0,
@@ -62,6 +63,13 @@ export const AddCatProfile = ({ currentUser }) => {
     setCurrentProfile(copy);
   };
 
+  const handleFixedRadioChange = (event) => {
+    const radioValue = event.target.value === "true";
+    const copy = { ...currentProfile };
+    copy[event.target.name] = radioValue;
+    setCurrentProfile(copy);
+  };
+
   useEffect(() => {
     getCatSexes().then(setCatSexes);
   }, []);
@@ -73,46 +81,59 @@ export const AddCatProfile = ({ currentUser }) => {
   return (
     <div className="outer-container">
       <div className="profile-container">
-        <input
-          type="text"
-          name="name"
-          onChange={(event) => {
-            handleInputChange(event);
-          }}
-          placeholder="Enter your cat's name"
-        />
-        <input
-          type="number"
-          name="age"
-          onChange={(event) => {
-            handleInputChange(event);
-          }}
-          placeholder="Enter your cat's age"
-        />
-        <input
-          type="number"
-          name="weight"
-          onChange={(event) => {
-            handleInputChange(event);
-          }}
-          placeholder="Enter your cat's weight"
-        />
-        {catSexes.map((sex) => {
-          return (
-            <div key={sex.id}>
-              <input
-                type="radio"
-                name="catSexId"
-                value={sex.id}
-                onChange={(event) => {
-                  handleInputChange(event);
-                }}
-              />
-              <label htmlFor={`sex-${sex.id}`}>{sex.type}</label>
-            </div>
-          );
-        })}
+        <div className="cat-name-input">
+          <h3>Cat Name:</h3>
+          <input
+            type="text"
+            name="name"
+            onChange={(event) => {
+              handleInputChange(event);
+            }}
+            placeholder="Enter your cat's name"
+          />
+        </div>
+        <div className="cat-age-input">
+          <h3>Cat Age:</h3>
+          <input
+            type="number"
+            name="age"
+            onChange={(event) => {
+              handleInputChange(event);
+            }}
+            placeholder="Enter your cat's age"
+          />
+        </div>
+        <div className="cat-weight-input">
+          <h3>Cat Weight:</h3>
+          <input
+            type="number"
+            name="weight"
+            onChange={(event) => {
+              handleInputChange(event);
+            }}
+            placeholder="Enter your cat's weight"
+          />
+        </div>
+        <div className="cat-sex-buttons">
+          <h3> Cat Sex:</h3>
+          {catSexes.map((sex) => {
+            return (
+              <div key={sex.id}>
+                <input
+                  type="radio"
+                  name="catSexId"
+                  value={sex.id}
+                  onChange={(event) => {
+                    handleInputChange(event);
+                  }}
+                />
+                <label htmlFor={`sex-${sex.id}`}>{sex.type}</label>
+              </div>
+            );
+          })}
+        </div>
         <div className="breed-dropdown">
+          <h3>Cat Breed:</h3>
           <select
             onChange={(event) => {
               handleInputChange(event);
@@ -131,6 +152,7 @@ export const AddCatProfile = ({ currentUser }) => {
           </select>
         </div>
         <div className="social-buttons-container">
+          <h3>Is your cat social?</h3>
           <input
             className="social-buttons"
             id="1"
@@ -155,6 +177,7 @@ export const AddCatProfile = ({ currentUser }) => {
           <label htmlFor={`isSocial-2`}>No</label>
         </div>
         <div className="public-buttons-container">
+          <h3>Do you want this profile to be viewed by others?</h3>
           <input
             className="public-buttons"
             id="1"
@@ -177,6 +200,31 @@ export const AddCatProfile = ({ currentUser }) => {
             }}
           />
           <label htmlFor={`isPublic-2`}>No</label>
+        </div>
+        <div className="fixed-buttons">
+          <h3>Is your cat Fixed?</h3>
+          <input
+            className="fixed-buttons"
+            id="1"
+            type="radio"
+            name="isFixed"
+            value="true"
+            onChange={() => {
+              handleFixedRadioChange(event);
+            }}
+          />
+          <label htmlFor={`isFixed-1`}>Yes</label>
+          <input
+            className="fixed-buttons"
+            id="2"
+            type="radio"
+            name="isFixed"
+            value="false"
+            onChange={() => {
+              handleFixedRadioChange(event);
+            }}
+          />
+          <label htmlFor={`isFixed-2`}>No</label>
         </div>
         <div className="add-btn">
           <button name="add-button" onClick={handleAddButton}>

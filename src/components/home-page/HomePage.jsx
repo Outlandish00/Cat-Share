@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getCatEntriesIfPublic } from "../../services/catServices";
+import { getCatEntriesIfPublicWithBreedAndSex } from "../../services/catServices";
 import "./HomePage.css";
 import { Link } from "react-router-dom";
 
@@ -7,7 +7,7 @@ export const HomePage = () => {
   const [publicCatEntries, setPublicCatEntries] = useState([]);
 
   useEffect(() => {
-    getCatEntriesIfPublic().then(setPublicCatEntries);
+    getCatEntriesIfPublicWithBreedAndSex().then(setPublicCatEntries);
   }, []);
 
   return (
@@ -21,8 +21,6 @@ export const HomePage = () => {
                   <div className="cat-details">
                     <h2>{catObj.name}</h2>
                     <h2>{catObj.age} years old</h2>
-                    <h3>Sex</h3>
-                    <h3>Location</h3>
                     <h3>
                       {catObj.isSocial
                         ? "This cat is social!"
