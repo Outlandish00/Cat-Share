@@ -102,7 +102,7 @@ export const AddCatProfile = ({ currentUser }) => {
             <div key={sex.id}>
               <input
                 type="radio"
-                name="sex"
+                name="catSexId"
                 value={sex.id}
                 onChange={(event) => {
                   handleInputChange(event);

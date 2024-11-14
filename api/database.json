@@ -111,18 +111,6 @@
   ],
   "catEntries": [
     {
-      "id": 1,
-      "name": "Joji",
-      "weight": 10,
-      "age": 2,
-      "isSocial": false,
-      "isFixed": true,
-      "isPublic": true,
-      "catBreedId": 1,
-      "userId": 1,
-      "feedingScheduleId": 2
-    },
-    {
       "id": 2,
       "name": "Mochi",
       "weight": 8,
@@ -132,7 +120,8 @@
       "isPublic": false,
       "catBreedId": 2,
       "userId": 2,
-      "feedingScheduleId": 1
+      "feedingScheduleId": 1,
+      "catSexId": 2
     },
     {
       "id": 3,
@@ -144,7 +133,8 @@
       "isPublic": true,
       "catBreedId": 3,
       "userId": 3,
-      "feedingScheduleId": 3
+      "feedingScheduleId": 3,
+      "catSexId": 1
     },
     {
       "id": 4,
@@ -156,7 +146,8 @@
       "isPublic": true,
       "catBreedId": 4,
       "userId": 4,
-      "feedingScheduleId": 2
+      "feedingScheduleId": 2,
+      "catSexId": 2
     },
     {
       "id": 5,
@@ -168,7 +159,8 @@
       "isPublic": true,
       "catBreedId": 5,
       "userId": 5,
-      "feedingScheduleId": 4
+      "feedingScheduleId": 4,
+      "catSexId": 1
     },
     {
       "id": 6,
@@ -180,7 +172,8 @@
       "isPublic": true,
       "catBreedId": 1,
       "userId": 1,
-      "feedingScheduleId": 2
+      "feedingScheduleId": 2,
+      "catSexId": 2
     },
     {
       "id": 7,
@@ -192,7 +185,7 @@
       "catBreedId": 1,
       "userId": 11,
       "feedingScheduleId": 0,
-      "sex": 1
+      "catSexId": 1
     },
     {
       "id": 8,
@@ -204,7 +197,7 @@
       "catBreedId": 1,
       "userId": 11,
       "feedingScheduleId": 0,
-      "sex": 1
+      "catSexId": 1
     }
   ],
   "catBreeds": [

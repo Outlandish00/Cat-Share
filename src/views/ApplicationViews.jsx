@@ -3,6 +3,7 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import { NavBar } from "../components/navbar/NavBar";
 import { HomePage } from "../components/home-page/HomePage";
 import { AddCatProfile } from "../components/cat-profiles/AddCatProfile";
+import { CatDetails } from "../components/cat-profiles/CatDetails";
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
@@ -25,7 +26,14 @@ export const ApplicationViews = () => {
           </>
         }
       >
-        <Route path="home-page" element={<HomePage />} />
+        <Route path="home-page">
+          <Route index element={<HomePage />} />
+          <Route
+            path=":catProfileId"
+            element={<CatDetails currentUser={currentUser} />}
+          />
+        </Route>
+
         <Route
           path="add-catprofile"
           element={<AddCatProfile currentUser={currentUser} />}
