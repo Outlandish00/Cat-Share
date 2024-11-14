@@ -125,10 +125,10 @@
     },
     {
       "id": 3,
-      "name": "Shadow",
+      "name": "Shadow-bomb",
       "weight": 12,
-      "age": 4,
-      "isSocial": false,
+      "age": 5,
+      "isSocial": true,
       "isFixed": true,
       "isPublic": true,
       "catBreedId": 3,
@@ -198,6 +198,19 @@
       "userId": 11,
       "feedingScheduleId": 0,
       "catSexId": 1
+    },
+    {
+      "id": 9,
+      "name": "Deletion",
+      "weight": 125,
+      "age": 1000,
+      "isSocial": false,
+      "isFixed": true,
+      "isPublic": true,
+      "catBreedId": 18,
+      "userId": 11,
+      "feedingScheduleId": 0,
+      "catSexId": 2
     }
   ],
   "catBreeds": [
