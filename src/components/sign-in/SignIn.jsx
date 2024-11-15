@@ -47,8 +47,11 @@ export const SignIn = () => {
             <h2 className="sign-in-text"> Please sign in</h2>
             <fieldset>
               <div className="form-group">
-                <h3 className="email-input">Email:</h3>
+                <h3 className="email-input" id="email-text">
+                  Email:
+                </h3>
                 <input
+                  id="email-input"
                   type="email"
                   value={email}
                   onChange={(evt) => setEmail(evt.target.value)}
@@ -79,10 +82,10 @@ export const SignIn = () => {
               </div>
             </fieldset>
           </div>
+          <Link className="register-link" to="/register">
+            Not a member yet?
+          </Link>
         </form>
-        <Link className="register-link" to="/register">
-          Not a member yet?
-        </Link>
       </section>
     </main>
   );

@@ -209,60 +209,6 @@
       "catSexId": 2
     },
     {
-      "id": 7,
-      "name": "Chowder",
-      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
-      "weight": 100,
-      "age": 200,
-      "isSocial": false,
-      "isFixed": true,
-      "isPublic": true,
-      "catBreedId": 1,
-      "userId": 11,
-      "catSexId": 1
-    },
-    {
-      "id": 8,
-      "name": "Jasper",
-      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
-      "weight": 100,
-      "age": 1,
-      "isSocial": false,
-      "isFixed": true,
-      "isPublic": true,
-      "catBreedId": 1,
-      "userId": 11,
-      "feedingScheduleId": 0,
-      "catSexId": 1
-    },
-    {
-      "id": 10,
-      "name": "Death, Destroyers of Worlds",
-      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
-      "weight": 0,
-      "age": 1000000,
-      "isSocial": false,
-      "isFixed": true,
-      "isPublic": true,
-      "catBreedId": 15,
-      "userId": 11,
-      "catSexId": 1
-    },
-    {
-      "id": 11,
-      "name": "Deletion",
-      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
-      "weight": 100,
-      "age": 100,
-      "isSocial": false,
-      "isFixed": true,
-      "isPublic": true,
-      "catBreedId": 1,
-      "userId": 11,
-      "feedingScheduleId": 0,
-      "catSexId": 2
-    },
-    {
       "id": 12,
       "name": "Milo",
       "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
@@ -333,20 +279,6 @@
       "catSexId": 1
     },
     {
-      "id": 17,
-      "name": "Tiger",
-      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
-      "weight": 14,
-      "age": 6,
-      "isSocial": false,
-      "isFixed": true,
-      "isPublic": true,
-      "catBreedId": 6,
-      "userId": 11,
-      "feedingScheduleId": 6,
-      "catSexId": 1
-    },
-    {
       "id": 18,
       "name": "Zoe",
       "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
@@ -401,6 +333,34 @@
       "userId": 15,
       "feedingScheduleId": 10,
       "catSexId": 1
+    },
+    {
+      "id": 23,
+      "name": "Chowder",
+      "pictureUrl": "https://i.imgur.com/36Th0GL.jpeg",
+      "weight": 1,
+      "age": 1,
+      "isSocial": false,
+      "isFixed": true,
+      "isPublic": true,
+      "catBreedId": 1,
+      "userId": 11,
+      "feedingScheduleId": 0,
+      "catSexId": 1
+    },
+    {
+      "id": 24,
+      "name": "Joji",
+      "pictureUrl": "https://i.imgur.com/tsbLnfa.jpeg",
+      "weight": 20,
+      "age": 2,
+      "isSocial": false,
+      "isFixed": true,
+      "isPublic": true,
+      "catBreedId": 1,
+      "userId": 11,
+      "feedingScheduleId": 0,
+      "catSexId": 2
     }
   ],
   "catBreeds": [

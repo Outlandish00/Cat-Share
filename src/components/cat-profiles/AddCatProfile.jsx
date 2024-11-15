@@ -1,3 +1,4 @@
+import "./AddCatProfile.css";
 import { useEffect, useState } from "react";
 import {
   addCatProfile,
@@ -13,6 +14,7 @@ export const AddCatProfile = ({ currentUser }) => {
   const [currentProfile, setCurrentProfile] = useState({
     id: 0,
     name: "",
+    pictureUrl: "",
     weight: 0,
     age: 0,
     isSocial: false,
@@ -40,7 +42,7 @@ export const AddCatProfile = ({ currentUser }) => {
 
   const handleInputChange = (event) => {
     const copy = { ...currentProfile };
-    if (event.target.name === "name") {
+    if (event.target.name === "name" || event.target.name === "pictureUrl") {
       copy[event.target.name] = event.target.value;
       setCurrentProfile(copy);
     } else {
@@ -82,7 +84,7 @@ export const AddCatProfile = ({ currentUser }) => {
     <div className="outer-container">
       <div className="profile-container">
         <div className="cat-name-input">
-          <h3>Cat Name:</h3>
+          <h3>Cat Name:</h3>{" "}
           <input
             type="text"
             name="name"
@@ -118,7 +120,7 @@ export const AddCatProfile = ({ currentUser }) => {
           <h3> Cat Sex:</h3>
           {catSexes.map((sex) => {
             return (
-              <div key={sex.id}>
+              <>
                 <input
                   type="radio"
                   name="catSexId"
@@ -128,17 +130,17 @@ export const AddCatProfile = ({ currentUser }) => {
                   }}
                 />
                 <label htmlFor={`sex-${sex.id}`}>{sex.type}</label>
-              </div>
+              </>
             );
           })}
         </div>
-        <div className="breed-dropdown">
+        <div className="breed-dropdown" size="5">
           <h3>Cat Breed:</h3>
           <select
             onChange={(event) => {
               handleInputChange(event);
             }}
-            className="breed-dropdown"
+            className="breed-dropdown-box"
             name="catBreedId"
           >
             <option value="0">Choose a cat breed</option>
@@ -177,7 +179,7 @@ export const AddCatProfile = ({ currentUser }) => {
           <label htmlFor={`isSocial-2`}>No</label>
         </div>
         <div className="public-buttons-container">
-          <h3>Do you want this profile to be viewed by others?</h3>
+          <h3>Make this cat public?</h3>
           <input
             className="public-buttons"
             id="1"
@@ -225,6 +227,17 @@ export const AddCatProfile = ({ currentUser }) => {
             }}
           />
           <label htmlFor={`isFixed-2`}>No</label>
+        </div>
+        <div className="img-url-container">
+          <h3>Cat Image Url:</h3>
+          <input
+            type="text"
+            name="pictureUrl"
+            placeholder="Must end in file type"
+            onChange={() => {
+              handleInputChange(event);
+            }}
+          />
         </div>
         <div className="add-btn">
           <button name="add-button" onClick={handleAddButton}>

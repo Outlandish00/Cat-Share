@@ -4,12 +4,17 @@ fieldset {
 
 .container-login {
   display: flex;
+  position: absolute; /* Use absolute positioning */
+  top: 50%; /* Position the element 50% from the top */
+  left: 50%; /* Position the element 50% from the left */
+  transform: translate(-50%, -50%);
   width: 75rem;
   height: 50rem;
   border-radius: 20%;
   background-color: #dec5e3;
   justify-content: center;
   align-items: center;
+  border: 2px solid black;
 }
 
 .form-login {
@@ -18,11 +23,8 @@ fieldset {
 }
 
 .register-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  font-family: "Faculty Glyphic", sans-serif;
+  width: 200px;
+  align-self: center;
 }
 
 .cat-share-logo {
@@ -60,6 +62,7 @@ fieldset {
 .bottom-half-form {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   color: black;
 }
 
@@ -68,6 +71,11 @@ fieldset {
   justify-content: center;
   align-items: center;
   font-family: "Faculty Glyphic", sans-serif;
+}
+
+#email-input,
+#email-text {
+  margin-bottom: 30px;
 }
 
 .email-input {
@@ -104,4 +112,13 @@ body {
   background-color: #81f7e5;
   font-size: 30px;
   color: black;
+  margin-bottom: 10px;
+}
+
+#root {
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  background-color: #b6dcfe;
 }

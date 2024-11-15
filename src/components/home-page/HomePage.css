@@ -1,11 +1,10 @@
 .outer-container {
   justify-content: center;
   display: flex;
-  margin-top: 100px;
+  padding-top: 30px;
   width: 100%;
   flex-wrap: wrap;
   background-color: #dec5e3;
-  min-height: 100vh;
   gap: 3rem;
 }
 
@@ -28,8 +27,7 @@
 }
 
 .card-outer > * {
-  /* Prevent individual elements inside from being scaled */
-  transition: none; /* Disable transitions for child elements */
+  transition: none;
 }
 
 .cat-details h2 {
@@ -47,6 +45,8 @@
   height: 200px;
   width: 250px;
   margin-bottom: 10px;
+  border: 4px black solid;
+  border-radius: 10px;
 }
 
 h3 {

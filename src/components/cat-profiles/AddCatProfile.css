@@ -1,0 +1,95 @@
+.profile-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #b6dcfe;
+  width: 90rem;
+  height: 45rem;
+  color: black;
+  border-radius: 50px;
+  border: 4px solid black;
+}
+
+.cat-name-input,
+.cat-age-input,
+.cat-weight-input,
+.cat-sex-buttons,
+.breed-dropdown,
+.social-buttons-container,
+.public-buttons-container,
+.fixed-buttons,
+.img-url-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 40px;
+  gap: 2rem;
+}
+
+.cat-name-input input,
+.cat-weight-input input,
+.breed-dropdown select,
+.cat-age-input input,
+.img-url-container input {
+  text-align: center;
+  width: 20rem;
+  background-color: azure;
+  border: none;
+  border-radius: 30px;
+  font-size: 25px;
+  color: black;
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
+option {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: #d9c4dd;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  appearance: none;
+  background-color: #6fbcff;
+  border-color: black;
+  outline: #75b5ec;
+}
+
+input[type="radio"]:checked::before {
+  appearance: none;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #6fbcff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="radio"]:hover {
+  appearance: none;
+  background-color: #93cbfd;
+}
+
+.add-btn button {
+  width: 30rem;
+  height: 2.5rem;
+  padding: 0;
+  border: none;
+  background-color: #81f7e5;
+  font-size: 30px;
+  color: black;
+  border: 2px solid black;
+}
