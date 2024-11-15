@@ -30,15 +30,22 @@ export const HomePage = ({ searchTerm }) => {
             <Link to={`/home-page/${catObj.id}`}>
               <div key={filteredEntries.id} className="card-outer">
                 <div className="image-container">
-                  <div className="cat-details">
+                  <img src={catObj.pictureUrl} />
+                </div>
+                <div className="cat-details">
+                  <div className="name-and-age">
                     <h2>{catObj.name}</h2>
                     <h2>{catObj.age} years old</h2>
-                    <h3>
-                      {catObj.isSocial
-                        ? "This cat is social!"
-                        : "This cat isn't social"}
-                    </h3>
                   </div>
+                  <div className="sex-and-location">
+                    <h3>{catObj.catSex.type}</h3>
+                    <h3>Location</h3>
+                  </div>
+                  <h3>
+                    {catObj.isSocial
+                      ? "This cat is social!"
+                      : "This cat isn't social"}
+                  </h3>
                 </div>
               </div>
             </Link>
