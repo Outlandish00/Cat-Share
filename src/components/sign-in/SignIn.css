@@ -17,15 +17,12 @@ fieldset {
   flex-direction: column;
 }
 
-.form-login h1 {
-  font-size: 70px;
-}
-
 .register-link {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  font-family: "Faculty Glyphic", sans-serif;
 }
 
 .cat-share-logo {
@@ -46,6 +43,7 @@ fieldset {
   color: black;
   margin: 0;
   font-size: 8rem;
+  font-family: "Faculty Glyphic", sans-serif;
 }
 
 .sign-in-text {
@@ -56,6 +54,7 @@ fieldset {
   border-top: 0;
   color: black;
   margin-bottom: 0;
+  font-family: "Faculty Glyphic", sans-serif;
 }
 
 .bottom-half-form {
@@ -68,15 +67,18 @@ fieldset {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Faculty Glyphic", sans-serif;
 }
 
 .email-input {
   margin-right: 20px;
   font-size: 30px;
+  font-family: "Faculty Glyphic", sans-serif;
 }
 .password-input {
   margin-right: 20px;
   font-size: 30px;
+  font-family: "Faculty Glyphic", sans-serif;
 }
 
 body {
@@ -91,6 +93,7 @@ body {
   height: 40px; /* Set a consistent height */
   width: 250px;
   border-radius: 10px;
+  font-family: "Faculty Glyphic", sans-serif;
 }
 
 .login-btn {

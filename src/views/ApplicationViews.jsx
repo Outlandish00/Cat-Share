@@ -9,6 +9,8 @@ import { EditCatProfile } from "../components/cat-profiles/EditCatProfile";
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
 
+  const [searchTerm, setSearchTerm] = useState("");
+
   useEffect(() => {
     const localCatShareUser = localStorage.getItem("catShare_user");
     const catShareUserObj = JSON.parse(localCatShareUser);
@@ -22,13 +24,13 @@ export const ApplicationViews = () => {
         path="/"
         element={
           <>
-            <NavBar />
+            <NavBar setSearchTerm={setSearchTerm} currentUser={currentUser} />
             <Outlet />
           </>
         }
       >
         <Route path="home-page">
-          <Route index element={<HomePage />} />
+          <Route index element={<HomePage searchTerm={searchTerm} />} />
           <Route
             path=":catProfileId"
             element={<CatDetails currentUser={currentUser} />}
