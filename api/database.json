@@ -3,7 +3,7 @@
     {
       "id": 1,
       "userName": "Outlandish",
-      "profilePic": "https://imgur.com/a/scoZHnL",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
       "email": "tooCoolForSchool@imaliar.com",
       "password": "thisissounsecure",
       "locationId": 2
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "userName": "PixelMaster",
-      "profilePic": "https://imgur.com/a/PixelMaster",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
       "email": "pixelperfect@imaliar.com",
       "password": "securepassword123",
       "locationId": 1
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "userName": "CoderX",
-      "profilePic": "https://imgur.com/a/CoderX",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
       "email": "codewizard@imaliar.com",
       "password": "ilovecode",
       "locationId": 3
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "userName": "CatLover22",
-      "profilePic": "https://imgur.com/a/CatLover22",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
       "email": "meowtown@imaliar.com",
       "password": "whiskers123",
       "locationId": 5
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "userName": "StarWarsFan",
-      "profilePic": "https://imgur.com/a/StarWarsFan",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
       "email": "forceuser@imaliar.com",
       "password": "maytheforce",
       "locationId": 4
@@ -43,7 +43,7 @@
     {
       "id": 6,
       "userName": "AnimeAddict",
-      "profilePic": "https://imgur.com/a/AnimeAddict",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
       "email": "otaku4life@imaliar.com",
       "password": "kawaiidesu",
       "locationId": 2
@@ -51,7 +51,7 @@
     {
       "id": 7,
       "userName": "GamerGal",
-      "profilePic": "https://imgur.com/a/GamerGal",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
       "email": "ggwins@imaliar.com",
       "password": "ggpassword",
       "locationId": 1
@@ -59,7 +59,7 @@
     {
       "id": 8,
       "userName": "MusicMogul",
-      "profilePic": "https://imgur.com/a/MusicMogul",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
       "email": "beatmaker@imaliar.com",
       "password": "musicislife",
       "locationId": 3
@@ -67,7 +67,7 @@
     {
       "id": 9,
       "userName": "ChefExtraordinaire",
-      "profilePic": "https://imgur.com/a/ChefExtraordinaire",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
       "email": "foodie@imaliar.com",
       "password": "cookingking",
       "locationId": 4
@@ -75,49 +75,49 @@
     {
       "id": 10,
       "userName": "NatureWalker",
-      "profilePic": "https://imgur.com/a/NatureWalker",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
       "email": "outdoorsy@imaliar.com",
       "password": "trailmix",
       "locationId": 5
     },
     {
       "userName": "TylerParker",
-      "profilePic": "https://imgur.com/a/g8SCPmS",
+      "profilePic": "https://i.imgur.com/36Th0GL.jpeg",
       "email": "example@example.com",
       "password": "examplePassword",
       "id": 11
     },
     {
       "userName": "LyndaByars",
-      "profilePic": "https://imgur.com/a/g8SCPmS",
+      "profilePic": "https://i.imgur.com/2ar1dcb.jpeg",
       "email": "supercoolemail@cool.com",
       "password": "abc123",
       "id": 12
     },
     {
       "userName": "GregKorte",
-      "profilePic": "https://imgur.com/a/g8SCPmS",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
       "email": "definitelyGreg@Greg.com",
       "password": "Greg",
       "id": 13
     },
     {
       "userName": "Askljdhkjas",
-      "profilePic": "https://imgur.com/a/g8SCPmS",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
       "email": "asdasd@Greg.com",
       "password": "asdasd",
       "id": 14
     },
     {
       "userName": "asdsa",
-      "profilePic": "https://imgur.com/a/g8SCPmS",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
       "email": "asdasd@greg.com",
       "password": "asdasd",
       "id": 15
     },
     {
       "userName": "Asldkjlksjd",
-      "profilePic": "https://imgur.com/a/g8SCPmS",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
       "email": "asd@asldkjsad.com",
       "password": "asdasdasd",
       "id": 16
