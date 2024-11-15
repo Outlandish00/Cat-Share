@@ -1,14 +1,85 @@
 .outer-container {
+  justify-content: center;
   display: flex;
-  gap: 2rem;
+  margin-top: 100px;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #dec5e3;
+  min-height: 100vh;
+  gap: 3rem;
 }
 
 .card-outer {
+  justify-content: center;
   display: flex;
   border: 2px solid black;
   color: black;
+  background-color: #b6dcfe;
+  height: 25rem;
+  width: 24rem;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 60px;
+  flex-direction: column;
+}
+.card-outer:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 50px 1px #75b5ec;
 }
 
-body {
+.card-outer > * {
+  /* Prevent individual elements inside from being scaled */
+  transition: none; /* Disable transitions for child elements */
+}
+
+.cat-details h2 {
+  margin: 10px;
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
+.cat-details {
+  border-top: 12px solid black;
+  width: 100%;
+}
+
+.image-container img {
+  margin-top: 10px;
+  height: 200px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.name-and-age {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
+.sex-and-location {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+body,
+html {
+  display: block;
   background-color: #dec5e3;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
+#root {
+  margin: 0;
+  min-width: 100%;
+  padding-top: 0;
 }
