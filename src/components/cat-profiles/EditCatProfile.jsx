@@ -80,6 +80,7 @@ export const EditCatProfile = () => {
       isSocial: currentCatProfile.isSocial,
       isFixed: currentCatProfile.isFixed,
       isPublic: currentCatProfile.isPublic,
+      feedingScheduleId: 0,
       catBreedId: currentCatProfile.catBreedId,
       userId: currentCatProfile.userId,
       catSexId: currentCatProfile.catSexId,

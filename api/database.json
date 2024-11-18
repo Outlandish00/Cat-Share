@@ -350,9 +350,9 @@
     {
       "id": 24,
       "name": "Joji",
-      "pictureUrl": "https://i.imgur.com/tsbLnfa.jpeg",
-      "weight": "200",
-      "age": "5",
+      "pictureUrl": "https://i.imgur.com/hXJQ6r1.jpeg",
+      "weight": 20,
+      "age": 1,
       "isSocial": false,
       "isFixed": true,
       "isPublic": true,
