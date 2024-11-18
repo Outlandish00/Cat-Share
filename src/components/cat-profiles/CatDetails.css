@@ -71,8 +71,8 @@
 
 .delete-button {
   position: absolute;
-  bottom: 2rem;
-  right: 19rem;
+  bottom: 2%;
+  right: 15%;
   font-size: 60px;
   color: black;
   cursor: pointer;

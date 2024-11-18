@@ -6,13 +6,20 @@ import {
   getCatSexes,
   updateCatProfile,
 } from "../../services/catServices";
+import "./EditCatProfile.css";
 
 export const EditCatProfile = () => {
   const navigate = useNavigate();
   const { catProfileId } = useParams();
+
+  const [initialCatProfile, setInitialCatProfile] = useState({});
   const [catSexes, setCatSexes] = useState([]);
   const [currentCatProfile, setCurrentCatProfile] = useState({});
   const [catBreeds, setCatBreeds] = useState([]);
+
+  useEffect(() => {
+    getCatProfileByIdWithBreedandSex(catProfileId).then(setInitialCatProfile);
+  }, [catProfileId]);
 
   useEffect(() => {
     getCatProfileByIdWithBreedandSex(catProfileId).then(setCurrentCatProfile);
@@ -28,11 +35,18 @@ export const EditCatProfile = () => {
 
   const handleInputChange = (event) => {
     const copy = { ...currentCatProfile };
-    if (event.target.name === "name") {
-      copy[event.target.name] = event.target.value;
-      setCurrentCatProfile(copy);
-    } else {
-      copy[event.target.name] = parseInt(event.target.value);
+    copy[event.target.name] = event.target.value;
+    setCurrentCatProfile(copy);
+  };
+
+  const handleBlur = (event) => {
+    if (
+      event.target.value === "" ||
+      event.target.value === "0" ||
+      event.target.value === null
+    ) {
+      const copy = { ...currentCatProfile };
+      copy[event.target.name] = initialCatProfile[event.target.name];
       setCurrentCatProfile(copy);
     }
   };
@@ -60,6 +74,7 @@ export const EditCatProfile = () => {
     const cleanProfile = {
       id: currentCatProfile.id,
       name: currentCatProfile.name,
+      pictureUrl: currentCatProfile.pictureUrl,
       weight: currentCatProfile.weight,
       age: currentCatProfile.age,
       isSocial: currentCatProfile.isSocial,
@@ -77,17 +92,21 @@ export const EditCatProfile = () => {
   }
 
   return (
-    <div className="outer-container">
-      <div className="card-outer">
-        <div className="cat-details">
+    <div className="edit-outer-container">
+      <div className="edit-container">
+        <div className="edit-cat-details">
           <div className="cat-name-input">
             <h3>Cat Name:</h3>
             <input
               placeholder={currentCatProfile.name}
               type="text"
               name="name"
+              value={currentCatProfile.name}
               onChange={(event) => {
                 handleInputChange(event);
+              }}
+              onBlur={(event) => {
+                handleBlur(event);
               }}
             />
           </div>
@@ -95,10 +114,13 @@ export const EditCatProfile = () => {
             <h3>Cat Age:</h3>
             <input
               type="number"
-              placeholder={currentCatProfile.age}
+              value={currentCatProfile.age || ""}
               name="age"
               onChange={(event) => {
                 handleInputChange(event);
+              }}
+              onBlur={(event) => {
+                handleBlur(event);
               }}
             />
           </div>
@@ -110,10 +132,13 @@ export const EditCatProfile = () => {
               onChange={(event) => {
                 handleInputChange(event);
               }}
-              placeholder={currentCatProfile.weight}
+              value={currentCatProfile.weight || ""}
+              onBlur={(event) => {
+                handleBlur(event);
+              }}
             />
           </div>
-          <div className="cat-sex-dropdown">
+          <div className="cat-sex-buttons">
             {catSexes.map((sex) => {
               return (
                 <div key={sex.id}>
@@ -137,7 +162,7 @@ export const EditCatProfile = () => {
               onChange={(event) => {
                 handleInputChange(event);
               }}
-              className="breed-dropdown"
+              className="breed-dropdown-bar"
               name="catBreedId"
               defaultValue={currentCatProfile.catBreedId}
             >
@@ -208,7 +233,7 @@ export const EditCatProfile = () => {
           <div className="fixed-buttons">
             <h3>Is your cat Fixed?</h3>
             <input
-              className="fixed-buttons"
+              className="fixed-button"
               id="1"
               type="radio"
               name="isFixed"
@@ -220,7 +245,7 @@ export const EditCatProfile = () => {
             />
             <label htmlFor={`isFixed-1`}>Yes</label>
             <input
-              className="fixed-buttons"
+              className="fixed-button"
               id="2"
               type="radio"
               name="isFixed"
@@ -231,6 +256,20 @@ export const EditCatProfile = () => {
               }}
             />
             <label htmlFor={`isFixed-2`}>No</label>
+          </div>
+          <div className="picture-url-container">
+            <h3>Picture Url:</h3>
+            <input
+              type="text"
+              name="pictureUrl"
+              placeholder={currentCatProfile.pictureUrl}
+              onChange={(event) => {
+                handleInputChange(event);
+              }}
+              onBlur={(event) => {
+                handleBlur(event);
+              }}
+            />
           </div>
           <div className="save-button">
             <button
