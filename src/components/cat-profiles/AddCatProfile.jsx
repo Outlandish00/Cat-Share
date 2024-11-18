@@ -14,7 +14,7 @@ export const AddCatProfile = ({ currentUser }) => {
   const [currentProfile, setCurrentProfile] = useState({
     id: 0,
     name: "",
-    pictureUrl: "",
+    pictureUrl: "https://i.imgur.com/zgGNjmG.png",
     weight: 0,
     age: 0,
     isSocial: false,
