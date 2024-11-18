@@ -7,7 +7,7 @@ import CatShareLogo from "../../assets/CatShareLogoNoBackground.png";
 export const Register = (props) => {
   const [customer, setCustomer] = useState({
     userName: "",
-    profilePic: "https://imgur.com/a/g8SCPmS",
+    profilePic: "https://i.imgur.com/zgGNjmG.png",
     email: "",
     password: "",
   });
