@@ -97,30 +97,9 @@
     {
       "userName": "GregKorte",
       "profilePic": "https://i.imgur.com/zgGNjmG.png",
-      "email": "definitelyGreg@Greg.com",
-      "password": "Greg",
-      "id": 13
-    },
-    {
-      "userName": "Askljdhkjas",
-      "profilePic": "https://i.imgur.com/zgGNjmG.png",
-      "email": "asdasd@Greg.com",
-      "password": "asdasd",
-      "id": 14
-    },
-    {
-      "userName": "asdsa",
-      "profilePic": "https://i.imgur.com/zgGNjmG.png",
-      "email": "asdasd@greg.com",
-      "password": "asdasd",
-      "id": 15
-    },
-    {
-      "userName": "Asldkjlksjd",
-      "profilePic": "https://i.imgur.com/zgGNjmG.png",
-      "email": "asd@asldkjsad.com",
-      "password": "asdasdasd",
-      "id": 16
+      "email": "thisisgreg@greg.com",
+      "password": "greg",
+      "id": 17
     }
   ],
   "catSexes": [
@@ -197,15 +176,15 @@
     {
       "id": 6,
       "name": "Oreo",
-      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
+      "pictureUrl": "https://i.imgur.com/GlyfQd4.jpeg",
       "weight": 20,
       "age": 2,
       "isSocial": false,
       "isFixed": true,
       "isPublic": true,
+      "feedingScheduleId": 0,
       "catBreedId": 1,
       "userId": 1,
-      "feedingScheduleId": 2,
       "catSexId": 2
     },
     {
@@ -359,6 +338,20 @@
       "catBreedId": 1,
       "userId": 11,
       "catSexId": 2
+    },
+    {
+      "id": 25,
+      "name": "Death, Destroyer of Worlds",
+      "pictureUrl": "https://i.imgur.com/uJHgSC8.png",
+      "weight": 0,
+      "age": 10000,
+      "isSocial": false,
+      "isFixed": false,
+      "isPublic": true,
+      "feedingScheduleId": 0,
+      "catBreedId": 1,
+      "userId": 17,
+      "catSexId": 3
     }
   ],
   "catBreeds": [
