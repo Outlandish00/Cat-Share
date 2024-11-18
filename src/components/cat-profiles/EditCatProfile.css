@@ -1,0 +1,64 @@
+.edit-outer-container {
+  justify-content: center;
+  display: flex;
+  padding-top: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #dec5e3;
+  gap: 3rem;
+}
+
+.cat-name-input,
+.cat-age-input,
+.cat-weight-input,
+.cat-sex-buttons,
+.breed-dropdown,
+.public-buttons-container,
+.fixed-buttons {
+  color: black;
+}
+
+.edit-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #b6dcfe;
+  width: 90rem;
+  height: 45rem;
+  color: black;
+  border-radius: 50px;
+  border: 4px solid black;
+}
+
+.social-button-container,
+.picture-url-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 40px;
+  gap: 2rem;
+  color: black;
+}
+
+.picture-url-container input {
+  text-align: center;
+  width: 20rem;
+  background-color: azure;
+  border: none;
+  border-radius: 30px;
+  font-size: 25px;
+  color: black;
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
+.save-button button {
+  width: 30rem;
+  height: 2.5rem;
+  padding: 0;
+  border: none;
+  background-color: #81f7e5;
+  font-size: 30px;
+  color: black;
+  border: 2px solid black;
+}

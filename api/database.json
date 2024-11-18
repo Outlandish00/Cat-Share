@@ -345,21 +345,19 @@
       "isPublic": true,
       "catBreedId": 1,
       "userId": 11,
-      "feedingScheduleId": 0,
       "catSexId": 1
     },
     {
       "id": 24,
       "name": "Joji",
-      "pictureUrl": "https://i.imgur.com/tsbLnfa.jpeg",
+      "pictureUrl": "https://i.imgur.com/hXJQ6r1.jpeg",
       "weight": 20,
-      "age": 2,
+      "age": 1,
       "isSocial": false,
       "isFixed": true,
       "isPublic": true,
       "catBreedId": 1,
       "userId": 11,
-      "feedingScheduleId": 0,
       "catSexId": 2
     }
   ],
