@@ -43,3 +43,9 @@ export const updateCatProfile = (catProfile) => {
     body: JSON.stringify(catProfile),
   });
 };
+
+export const getCatProfileWithAMatchingUserId = (userId) => {
+  return fetch(`http://localhost:8088/catEntries?userId=${userId}`).then(
+    (res) => res.json()
+  );
+};

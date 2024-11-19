@@ -15,8 +15,13 @@ export const HomePage = ({ searchTerm }) => {
     if (searchTerm === "") {
       setFilteredEntries(publicCatEntries);
     } else {
-      const foundEntries = publicCatEntries.filter((entry) =>
-        entry.name.toLowerCase().includes(searchTerm.toLowerCase())
+      const foundEntries = publicCatEntries.filter(
+        (entry) =>
+          entry.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          entry.catBreed.name
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase()) ||
+          entry.catSex.type.toLowerCase() === searchTerm.toLowerCase()
       );
       setFilteredEntries(foundEntries);
     }

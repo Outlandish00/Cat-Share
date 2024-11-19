@@ -1,0 +1,127 @@
+.cat-entries-header {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  font-size: 40px;
+  color: black;
+  border-bottom: 10px solid black;
+  justify-content: end;
+  width: 98.5rem;
+}
+
+.hiding-div {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  width: 320px;
+  height: 100px;
+  background-color: #dec5e3;
+}
+
+.cat-entries-header h2 {
+  margin-bottom: 10px;
+}
+
+.user-image-container {
+  padding: 30px;
+}
+
+.plus-button {
+  position: absolute;
+  top: 11rem;
+  right: 50rem;
+  background-color: #81f7e5;
+  width: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.plus-button:hover {
+  transform: scale(1.2);
+}
+
+.user-image-container img {
+  margin-top: 10px;
+  height: 200px;
+  width: 250px;
+  margin-bottom: 10px;
+  border: 4px black solid;
+  border-radius: 50%;
+}
+
+.profile-edit-pencil {
+  position: absolute;
+  font-size: 30px;
+  right: 20px;
+  top: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.profile-edit-pencil:hover {
+  transform: scale(1.5);
+}
+
+.user-name {
+  font-size: 40px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.user-email {
+  font-size: 20px;
+  color: black;
+}
+
+.profile-information {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 90px;
+  height: 90vh;
+  width: 20rem;
+  border-left: 10px solid black;
+}
+
+.user-profile-information {
+  display: flex;
+  flex-direction: column;
+  height: 100rem;
+}
+
+.cat-entries-cards img {
+  margin-top: 30px;
+  height: 200px;
+  width: 250px;
+  margin-bottom: 10px;
+  border: 4px black solid;
+  border-radius: 10px;
+  transition: none;
+}
+
+.entry-card-outer {
+  height: 350px;
+  border: 5px solid black;
+  width: 400px;
+  background-color: #b6dcfe;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cat-entries-cards {
+  justify-content: space-evenly;
+  width: 98.5rem;
+  margin-top: 50px;
+  gap: 50px;
+  display: flex;
+}
+
+.entry-card-outer * {
+  transition: none;
+}
+
+.entry-card-outer:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 50px 1px #75b5ec;
+}
