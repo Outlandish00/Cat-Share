@@ -335,6 +335,7 @@
       "isSocial": false,
       "isFixed": true,
       "isPublic": true,
+      "feedingScheduleId": 0,
       "catBreedId": 1,
       "userId": 11,
       "catSexId": 2
@@ -352,6 +353,20 @@
       "catBreedId": 1,
       "userId": 17,
       "catSexId": 3
+    },
+    {
+      "id": 26,
+      "name": "asd",
+      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
+      "weight": 35,
+      "age": 546,
+      "isSocial": false,
+      "isFixed": false,
+      "isPublic": true,
+      "catBreedId": 15,
+      "userId": 11,
+      "feedingScheduleId": 0,
+      "catSexId": 2
     }
   ],
   "catBreeds": [

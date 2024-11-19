@@ -73,7 +73,7 @@ export const NavBar = ({ setSearchTerm, currentUser }) => {
         ""
       )}
       <li className="navbar-item pfp-container">
-        <Link>
+        <Link to="your-profile">
           <img className="pfp-img" src={userObj.profilePic} />
         </Link>
       </li>
