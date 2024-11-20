@@ -17,10 +17,11 @@ export const AddCatProfile = ({ currentUser }) => {
     pictureUrl: "https://i.imgur.com/zgGNjmG.png",
     weight: 0,
     age: 0,
-    isSocial: false,
-    isFixed: false,
-    isPublic: false,
+    isSocial: undefined,
+    isFixed: undefined,
+    isPublic: undefined,
     catBreedId: 0,
+    catSexId: 0,
     userId: 0,
     feedingScheduleId: 0,
   });
@@ -35,9 +36,35 @@ export const AddCatProfile = ({ currentUser }) => {
   }, [currentUser]);
 
   const handleAddButton = () => {
-    addCatProfile(currentProfile).then(() => {
-      navigate("/home-page");
-    });
+    const {
+      name,
+      pictureUrl,
+      weight,
+      age,
+      catBreedId,
+      catSexId,
+      isSocial,
+      isFixed,
+      isPublic,
+    } = currentProfile;
+
+    if (
+      !name ||
+      weight === 0 ||
+      age === 0 ||
+      catBreedId === 0 ||
+      catSexId === 0 ||
+      isSocial === undefined ||
+      isFixed === undefined ||
+      isPublic === undefined
+    ) {
+      window.alert("Please fill out all fields before submitting cat profile.");
+      return;
+    } else {
+      addCatProfile(currentProfile).then(() => {
+        navigate("/home-page");
+      });
+    }
   };
 
   const handleInputChange = (event) => {
