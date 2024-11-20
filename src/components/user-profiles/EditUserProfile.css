@@ -1,0 +1,62 @@
+.image-preview img {
+  margin-top: 30px;
+  height: 200px;
+  width: 250px;
+  margin-bottom: 10px;
+  border: 4px black solid;
+  border-radius: 50%;
+}
+.image-preview {
+  margin-bottom: 30px;
+}
+
+.edit-outer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.edit-profile-outer {
+  display: flex;
+  flex-direction: column;
+  background-color: #b6dcfe;
+  width: 45rem;
+  height: 45rem;
+  border: 2px solid black;
+  border-radius: 120px;
+}
+
+.image-url,
+.email-input,
+.password-input,
+.username-input {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.image-url input,
+.email-input input,
+.password-input input,
+.username-input input {
+  font-size: 20px;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+}
+
+.save-profile-button button {
+  width: 15rem;
+  height: 2.5rem;
+  padding: 0;
+  border: none;
+  background-color: #81f7e5;
+  font-size: 30px;
+  color: black;
+  border: 2px solid black;
+}

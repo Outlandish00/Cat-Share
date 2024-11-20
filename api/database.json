@@ -81,8 +81,8 @@
       "locationId": 5
     },
     {
-      "userName": "TylerParker",
-      "profilePic": "https://i.imgur.com/36Th0GL.jpeg",
+      "userName": "Outlandish",
+      "profilePic": "https://i.imgur.com/XHe1Y7k.jpeg",
       "email": "example@example.com",
       "password": "examplePassword",
       "id": 11
@@ -272,48 +272,6 @@
       "catSexId": 2
     },
     {
-      "id": 19,
-      "name": "Leo",
-      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
-      "weight": 13,
-      "age": 4,
-      "isSocial": true,
-      "isFixed": true,
-      "isPublic": false,
-      "catBreedId": 8,
-      "userId": 13,
-      "feedingScheduleId": 8,
-      "catSexId": 1
-    },
-    {
-      "id": 20,
-      "name": "Bella",
-      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
-      "weight": 9,
-      "age": 2,
-      "isSocial": false,
-      "isFixed": true,
-      "isPublic": true,
-      "catBreedId": 9,
-      "userId": 14,
-      "feedingScheduleId": 9,
-      "catSexId": 2
-    },
-    {
-      "id": 21,
-      "name": "Toby",
-      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
-      "weight": 10,
-      "age": 5,
-      "isSocial": true,
-      "isFixed": false,
-      "isPublic": false,
-      "catBreedId": 10,
-      "userId": 15,
-      "feedingScheduleId": 10,
-      "catSexId": 1
-    },
-    {
       "id": 23,
       "name": "Chowder",
       "pictureUrl": "https://i.imgur.com/36Th0GL.jpeg",
@@ -355,18 +313,18 @@
       "catSexId": 3
     },
     {
-      "id": 26,
-      "name": "asd",
+      "id": 27,
+      "name": "Shadow",
       "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
-      "weight": 35,
-      "age": 546,
+      "weight": 101,
+      "age": 100,
       "isSocial": false,
       "isFixed": false,
-      "isPublic": true,
-      "catBreedId": 15,
-      "userId": 11,
+      "isPublic": false,
       "feedingScheduleId": 0,
-      "catSexId": 2
+      "catBreedId": 14,
+      "userId": 11,
+      "catSexId": 1
     }
   ],
   "catBreeds": [

@@ -6,6 +6,7 @@ import { AddCatProfile } from "../components/cat-profiles/AddCatProfile";
 import { CatDetails } from "../components/cat-profiles/CatDetails";
 import { EditCatProfile } from "../components/cat-profiles/EditCatProfile";
 import { UserProfile } from "../components/user-profiles/UserProfile";
+import { EditUserProfile } from "../components/user-profiles/EditUserProfile";
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
@@ -46,10 +47,13 @@ export const ApplicationViews = () => {
           path="add-catprofile"
           element={<AddCatProfile currentUser={currentUser} />}
         />
-        <Route
-          path="your-profile"
-          element={<UserProfile currentUser={currentUser} />}
-        />
+        <Route path="profile">
+          <Route index element={<UserProfile currentUser={currentUser} />} />
+          <Route
+            path="edit"
+            element={<EditUserProfile currentUser={currentUser} />}
+          />
+        </Route>
       </Route>
     </Routes>
   );

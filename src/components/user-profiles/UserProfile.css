@@ -110,11 +110,14 @@
 }
 
 .cat-entries-cards {
+  display: flex;
   justify-content: space-evenly;
-  width: 98.5rem;
+  width: 98.3em;
   margin-top: 50px;
   gap: 50px;
+  flex-wrap: wrap;
   display: flex;
+  border-right: 10px solid black;
 }
 
 .entry-card-outer * {

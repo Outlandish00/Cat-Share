@@ -63,7 +63,7 @@ export const UserProfile = ({ currentUser }) => {
             icon={faPencil}
             className="profile-edit-pencil"
             onClick={() => {
-              navigate();
+              navigate("edit");
             }}
           />
         </div>
