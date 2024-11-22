@@ -7,6 +7,7 @@ import { CatDetails } from "../components/cat-profiles/CatDetails";
 import { EditCatProfile } from "../components/cat-profiles/EditCatProfile";
 import { UserProfile } from "../components/user-profiles/UserProfile";
 import { EditUserProfile } from "../components/user-profiles/EditUserProfile";
+import { FeedingSchedules } from "../components/feeding-reminders/FeedingSchedules";
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
@@ -54,6 +55,15 @@ export const ApplicationViews = () => {
             element={<EditUserProfile currentUser={currentUser} />}
           />
         </Route>
+        <Route
+          path="reminders"
+          element={
+            <FeedingSchedules
+              currentUser={currentUser}
+              key={location.pathname}
+            />
+          }
+        />
       </Route>
     </Routes>
   );

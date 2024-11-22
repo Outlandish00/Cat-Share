@@ -1,0 +1,59 @@
+.schedule-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.schedule-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 80px;
+  background-color: #b6dcfe;
+  height: 700px;
+  width: 800px;
+  border-radius: 80px;
+  border: 5px solid black;
+}
+
+.schedule-form-container h1 {
+  color: black;
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.first-time,
+.second-time,
+.third-time,
+.cat-entry-selector {
+  display: flex;
+  gap: 20px;
+  font-size: 40px;
+  color: black;
+}
+
+.first-time input,
+.second-time input,
+.third-time input,
+.cat-entry-selector select {
+  text-align: center;
+  color: black;
+  background-color: white;
+  font-size: 40px;
+  border-radius: 20px;
+  border: 2px solid black;
+  width: 243px;
+}
+
+.schedule-button button {
+  width: 30rem;
+  height: 2.5rem;
+  padding: 0;
+  border: none;
+  background-color: #81f7e5;
+  font-size: 30px;
+  color: black;
+  border: 2px solid black;
+}
