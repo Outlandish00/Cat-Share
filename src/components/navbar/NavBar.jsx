@@ -13,10 +13,28 @@ export const NavBar = ({ setSearchTerm, currentUser }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const [userObj, setUserObj] = useState({});
+  const [selectedOption, setSelectedOption] = useState(location.pathname);
 
   useEffect(() => {
     getUserById(currentUser.id).then(setUserObj);
   }, [currentUser]);
+
+  useEffect(() => {
+    setSelectedOption(location.pathname);
+  }, [location.pathname]);
+
+  const handleChange = (event) => {
+    const selectedValue = event.target.value;
+    setSelectedOption(selectedValue);
+    if (selectedValue) {
+      if (selectedValue === "/") {
+        localStorage.removeItem("catShare_user");
+        navigate(selectedValue);
+      } else {
+        navigate(selectedValue);
+      }
+    }
+  };
 
   return (
     <ul className="navbar">
@@ -50,28 +68,13 @@ export const NavBar = ({ setSearchTerm, currentUser }) => {
         </button>
       </li>
       <li className="navbar-item">
-        <button
-          onClick={() => {
-            navigate("/add-catprofile");
-          }}
-        >
-          Create a cat profile
-        </button>
+        <select onChange={handleChange} value={selectedOption}>
+          <option value="/home-page">Home Page</option>
+          <option value="/add-catprofile">Add a profile</option>
+          <option value="/reminders">Feeding Schedules</option>
+          <option value="/">Logout</option>
+        </select>
       </li>
-      {localStorage.getItem("catShare_user") ? (
-        <li className="navbar-item">
-          <button
-            onClick={() => {
-              localStorage.removeItem("catShare_user");
-              navigate("/");
-            }}
-          >
-            Logout
-          </button>
-        </li>
-      ) : (
-        ""
-      )}
       <li className="navbar-item pfp-container">
         <Link to="profile">
           <img className="pfp-img" src={userObj.profilePic} />

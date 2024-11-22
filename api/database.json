@@ -128,7 +128,6 @@
       "isPublic": false,
       "catBreedId": 2,
       "userId": 2,
-      "feedingScheduleId": 0,
       "catSexId": 2
     },
     {
@@ -142,7 +141,6 @@
       "isPublic": true,
       "catBreedId": 3,
       "userId": 3,
-      "feedingScheduleId": 3,
       "catSexId": 1
     },
     {
@@ -156,7 +154,6 @@
       "isPublic": true,
       "catBreedId": 4,
       "userId": 4,
-      "feedingScheduleId": 2,
       "catSexId": 2
     },
     {
@@ -170,7 +167,6 @@
       "isPublic": true,
       "catBreedId": 5,
       "userId": 5,
-      "feedingScheduleId": 4,
       "catSexId": 1
     },
     {
@@ -182,7 +178,6 @@
       "isSocial": false,
       "isFixed": true,
       "isPublic": true,
-      "feedingScheduleId": 0,
       "catBreedId": 1,
       "userId": 1,
       "catSexId": 2
@@ -198,7 +193,6 @@
       "isPublic": true,
       "catBreedId": 1,
       "userId": 6,
-      "feedingScheduleId": 0,
       "catSexId": 1
     },
     {
@@ -212,7 +206,6 @@
       "isPublic": true,
       "catBreedId": 2,
       "userId": 7,
-      "feedingScheduleId": 2,
       "catSexId": 1
     },
     {
@@ -226,7 +219,6 @@
       "isPublic": false,
       "catBreedId": 3,
       "userId": 8,
-      "feedingScheduleId": 3,
       "catSexId": 2
     },
     {
@@ -240,7 +232,6 @@
       "isPublic": true,
       "catBreedId": 4,
       "userId": 9,
-      "feedingScheduleId": 4,
       "catSexId": 2
     },
     {
@@ -254,7 +245,6 @@
       "isPublic": false,
       "catBreedId": 5,
       "userId": 10,
-      "feedingScheduleId": 5,
       "catSexId": 1
     },
     {
@@ -268,7 +258,6 @@
       "isPublic": true,
       "catBreedId": 7,
       "userId": 12,
-      "feedingScheduleId": 7,
       "catSexId": 2
     },
     {
@@ -293,7 +282,6 @@
       "isSocial": false,
       "isFixed": true,
       "isPublic": true,
-      "feedingScheduleId": 0,
       "catBreedId": 1,
       "userId": 11,
       "catSexId": 2
@@ -307,7 +295,6 @@
       "isSocial": false,
       "isFixed": false,
       "isPublic": true,
-      "feedingScheduleId": 0,
       "catBreedId": 1,
       "userId": 17,
       "catSexId": 3
@@ -321,7 +308,6 @@
       "isSocial": false,
       "isFixed": false,
       "isPublic": false,
-      "feedingScheduleId": 1,
       "catBreedId": 14,
       "userId": 11,
       "catSexId": 1
@@ -330,9 +316,45 @@
   "feedingSchedules": [
     {
       "id": 1,
-      "firstTime": "11:38 AM",
-      "secondTime": "02:00",
-      "thirdTime": "06:00"
+      "firstTime": "10:34",
+      "secondTime": "10:38",
+      "thirdTime": "10:40",
+      "catEntryId": 0
+    },
+    {
+      "id": 2,
+      "firstTime": "10:46",
+      "secondTime": "10:47",
+      "thirdTime": "10:49",
+      "catEntryId": 0
+    },
+    {
+      "id": 3,
+      "firstTime": "11:08",
+      "secondTime": "11:09",
+      "thirdTime": "11:10",
+      "catEntryId": 0
+    },
+    {
+      "id": 4,
+      "firstTime": "19:00",
+      "secondTime": "21:34",
+      "thirdTime": "23:34",
+      "catEntryId": 0
+    },
+    {
+      "id": 5,
+      "firstTime": "12:06",
+      "secondTime": "12:07",
+      "thirdTime": "12:08",
+      "catEntryId": 0
+    },
+    {
+      "id": 6,
+      "firstTime": "12:20",
+      "secondTime": "12:21",
+      "thirdTime": "12:25",
+      "catEntryId": 27
     }
   ],
   "catBreeds": [

@@ -29,3 +29,13 @@ export const updateUser = (user) => {
     body: JSON.stringify(user),
   });
 };
+
+export const addNewSchedule = (schedule) => {
+  return fetch(`http://localhost:8088/feedingSchedules`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(schedule),
+  }).then((res) => res.json);
+};
