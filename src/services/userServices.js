@@ -37,5 +37,11 @@ export const addNewSchedule = (schedule) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(schedule),
-  }).then((res) => res.json);
+  }).then((res) => res.json());
+};
+
+export const getCatsWithUserIdAndReminders = (id) => {
+  return fetch(
+    `http://localhost:8088/catEntries?userId=${id}&_embed=feedingSchedules`
+  ).then((res) => res.json());
 };
