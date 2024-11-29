@@ -9,6 +9,7 @@ import { UserProfile } from "../components/user-profiles/UserProfile";
 import { EditUserProfile } from "../components/user-profiles/EditUserProfile";
 import { AddFeedingSchedules } from "../components/feeding-reminders/AddFeedingSchedules";
 import { FeedingSchedules } from "../components/feeding-reminders/FeedingSchedules";
+import { EditReminders } from "../components/feeding-reminders/EditReminders";
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
@@ -70,6 +71,7 @@ export const ApplicationViews = () => {
               />
             }
           />
+          <Route path="reminders-edit" element={<EditReminders />} />
         </Route>
       </Route>
     </Routes>
