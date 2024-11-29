@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import "./AddFeedingSchedules.css";
 import { getCatProfileWithAMatchingUserId } from "../../services/catServices";
 import { addNewSchedule } from "../../services/userServices";
+import { useNavigate } from "react-router-dom";
 
 export const AddFeedingSchedules = ({ currentUser }) => {
+  const navigate = useNavigate();
   const [newFeedingSchedule, setNewFeedingSchedule] = useState({
     id: 0,
     firstTime: "",
@@ -11,6 +13,8 @@ export const AddFeedingSchedules = ({ currentUser }) => {
     thirdTime: "",
     catEntryId: 0,
   });
+
+  const [refreshKey, setRefreshKey] = useState(0);
 
   const [usersCatEntries, setusersCatEntries] = useState([]);
 
@@ -40,7 +44,9 @@ export const AddFeedingSchedules = ({ currentUser }) => {
     setNewFeedingSchedule(copy);
   };
   const handleSave = (newFeedingSchedule) => {
-    addNewSchedule(newFeedingSchedule);
+    addNewSchedule(newFeedingSchedule).then(
+      navigate("/reminders", { state: { key: refreshKey + 1 } })
+    );
   };
 
   return (
@@ -89,6 +95,7 @@ export const AddFeedingSchedules = ({ currentUser }) => {
               handleSelectChange(event);
             }}
           >
+            <option value="0">Choose</option>
             {usersCatEntries.map((cat) => {
               return (
                 <option value={cat.id} key={cat.id} id={cat.id}>

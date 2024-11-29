@@ -1,0 +1,59 @@
+.edit-reminders-outside {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-reminder-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 800px;
+  gap: 60px;
+  margin-top: 80px;
+  background-color: #b6dcfe;
+  border-radius: 80px;
+  border: 5px solid black;
+}
+
+.edit-reminder-container h1 {
+  color: black;
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.edit-first-time,
+.edit-second-time,
+.edit-third-time {
+  display: flex;
+  gap: 20px;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  height: 80px;
+}
+
+.edit-first-time-box,
+.edit-second-time-box,
+.edit-third-time-box {
+  text-align: center;
+  color: black;
+  background-color: white;
+  font-size: 40px;
+  border-radius: 20px;
+  border: 2px solid black;
+  width: 243px;
+  height: 70px;
+}
+.edit-reminders-button {
+  width: 30rem;
+  height: 2.5rem;
+  padding: 0;
+  border: none;
+  background-color: #81f7e5;
+  font-size: 30px;
+  color: black;
+  border: 2px solid black;
+}

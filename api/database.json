@@ -316,45 +316,10 @@
   "feedingSchedules": [
     {
       "id": 1,
-      "firstTime": "10:34",
-      "secondTime": "10:38",
-      "thirdTime": "10:40",
-      "catEntryId": 0
-    },
-    {
-      "id": 2,
-      "firstTime": "10:46",
-      "secondTime": "10:47",
-      "thirdTime": "10:49",
-      "catEntryId": 0
-    },
-    {
-      "id": 3,
-      "firstTime": "11:08",
-      "secondTime": "11:09",
-      "thirdTime": "11:10",
-      "catEntryId": 0
-    },
-    {
-      "id": 4,
-      "firstTime": "19:00",
-      "secondTime": "21:34",
-      "thirdTime": "23:34",
+      "firstTime": "14:26",
+      "secondTime": "14:05",
+      "thirdTime": "14:06",
       "catEntryId": 23
-    },
-    {
-      "id": 5,
-      "firstTime": "12:06",
-      "secondTime": "12:07",
-      "thirdTime": "12:08",
-      "catEntryId": 24
-    },
-    {
-      "id": 6,
-      "firstTime": "12:20",
-      "secondTime": "12:21",
-      "thirdTime": "12:25",
-      "catEntryId": 27
     }
   ],
   "catBreeds": [
