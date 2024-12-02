@@ -316,9 +316,9 @@
   "feedingSchedules": [
     {
       "id": 1,
-      "firstTime": "14:26",
-      "secondTime": "14:05",
-      "thirdTime": "14:06",
+      "firstTime": "09:01",
+      "secondTime": "09:02",
+      "thirdTime": "09:03",
       "catEntryId": 23
     }
   ],
