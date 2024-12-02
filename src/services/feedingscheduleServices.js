@@ -1,5 +1,5 @@
 export const getFeedingSchedulesWithCatEntries = () => {
-  return fetch("http://localhost:8088/feedingSchedules?_embed=catEntries").then(
+  return fetch("http://localhost:8088/feedingSchedules?_expand=catEntry").then(
     (res) => res.json()
   );
 };

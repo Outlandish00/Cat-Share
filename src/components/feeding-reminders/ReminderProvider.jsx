@@ -40,7 +40,7 @@ export const ReminderProvider = ({ children }) => {
           reminderSecond === currentTime ||
           reminderThird === currentTime
         ) {
-          window.alert("Hello there!");
+          window.alert(`Time to feed ${reminder.catEntry.name}`);
         }
       });
     }
