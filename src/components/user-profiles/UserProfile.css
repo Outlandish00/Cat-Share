@@ -29,7 +29,7 @@
 .plus-button {
   position: absolute;
   top: 11rem;
-  right: 50rem;
+  right: 40rem;
   background-color: #81f7e5;
   width: 60px;
   border-radius: 10px;
@@ -117,7 +117,6 @@
   gap: 50px;
   flex-wrap: wrap;
   display: flex;
-  border-right: 10px solid black;
 }
 
 .entry-card-outer * {
