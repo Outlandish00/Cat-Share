@@ -1,0 +1,77 @@
+.reminders-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.reminders-card-container {
+  margin-top: 80px;
+  display: flex;
+  gap: 40px;
+}
+.reminders-card-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #b6dcfe;
+  border: 2px solid black;
+  width: 350px;
+  height: 350px;
+  border-radius: 30px;
+  gap: 20px;
+}
+
+.cat-name-container {
+  color: black;
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.first-container,
+.second-container,
+.third-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  color: black;
+  font-size: 20px;
+  height: fit-content;
+}
+.first-container h2,
+.second-container h2,
+.third-container h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.new-reminders-btn {
+  margin-top: 100px;
+}
+
+.new-reminders-btn button {
+  width: 30rem;
+  height: 2.5rem;
+  padding: 0;
+  border: none;
+  background-color: #81f7e5;
+  font-size: 30px;
+  color: black;
+  border: 2px solid black;
+}
+
+.reminder-delete-button {
+  display: flex;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.reminder-delete-button :hover {
+  transform: scale(1.25);
+  cursor: pointer;
+}
+
+.edit-reminders-pencil :hover {
+  transform: scale(1.25);
+  cursor: pointer;
+}

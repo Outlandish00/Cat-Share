@@ -1,0 +1,719 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userName": "Outlandish",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
+      "email": "tooCoolForSchool@imaliar.com",
+      "password": "thisissounsecure",
+      "locationId": 2
+    },
+    {
+      "id": 2,
+      "userName": "PixelMaster",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
+      "email": "pixelperfect@imaliar.com",
+      "password": "securepassword123",
+      "locationId": 1
+    },
+    {
+      "id": 3,
+      "userName": "CoderX",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
+      "email": "codewizard@imaliar.com",
+      "password": "ilovecode",
+      "locationId": 3
+    },
+    {
+      "id": 4,
+      "userName": "CatLover22",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
+      "email": "meowtown@imaliar.com",
+      "password": "whiskers123",
+      "locationId": 5
+    },
+    {
+      "id": 5,
+      "userName": "StarWarsFan",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
+      "email": "forceuser@imaliar.com",
+      "password": "maytheforce",
+      "locationId": 4
+    },
+    {
+      "id": 6,
+      "userName": "AnimeAddict",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
+      "email": "otaku4life@imaliar.com",
+      "password": "kawaiidesu",
+      "locationId": 2
+    },
+    {
+      "id": 7,
+      "userName": "GamerGal",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
+      "email": "ggwins@imaliar.com",
+      "password": "ggpassword",
+      "locationId": 1
+    },
+    {
+      "id": 8,
+      "userName": "MusicMogul",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
+      "email": "beatmaker@imaliar.com",
+      "password": "musicislife",
+      "locationId": 3
+    },
+    {
+      "id": 9,
+      "userName": "ChefExtraordinaire",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
+      "email": "foodie@imaliar.com",
+      "password": "cookingking",
+      "locationId": 4
+    },
+    {
+      "id": 10,
+      "userName": "NatureWalker",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
+      "email": "outdoorsy@imaliar.com",
+      "password": "trailmix",
+      "locationId": 5
+    },
+    {
+      "userName": "Outlandish",
+      "profilePic": "https://i.imgur.com/XHe1Y7k.jpeg",
+      "email": "example@example.com",
+      "password": "examplePassword",
+      "id": 11
+    },
+    {
+      "userName": "LyndaByars",
+      "profilePic": "https://i.imgur.com/2ar1dcb.jpeg",
+      "email": "supercoolemail@cool.com",
+      "password": "abc123",
+      "id": 12
+    },
+    {
+      "userName": "GregKorte",
+      "profilePic": "https://i.imgur.com/zgGNjmG.png",
+      "email": "thisisgreg@greg.com",
+      "password": "greg",
+      "id": 17
+    }
+  ],
+  "catSexes": [
+    {
+      "id": 1,
+      "type": "Male"
+    },
+    {
+      "id": 2,
+      "type": "Female"
+    },
+    {
+      "id": 3,
+      "type": "Prefer Not To Say"
+    }
+  ],
+  "catEntries": [
+    {
+      "id": 2,
+      "name": "Mochi",
+      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
+      "weight": 8,
+      "age": 1,
+      "isSocial": true,
+      "isFixed": false,
+      "isPublic": false,
+      "catBreedId": 2,
+      "userId": 2,
+      "catSexId": 2
+    },
+    {
+      "id": 3,
+      "name": "Shadow-bomb",
+      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
+      "weight": 12,
+      "age": 5,
+      "isSocial": true,
+      "isFixed": true,
+      "isPublic": true,
+      "catBreedId": 3,
+      "userId": 3,
+      "catSexId": 1
+    },
+    {
+      "id": 4,
+      "name": "Luna",
+      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
+      "weight": 9,
+      "age": 3,
+      "isSocial": true,
+      "isFixed": true,
+      "isPublic": true,
+      "catBreedId": 4,
+      "userId": 4,
+      "catSexId": 2
+    },
+    {
+      "id": 5,
+      "name": "Cleo",
+      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
+      "weight": 7,
+      "age": 1,
+      "isSocial": false,
+      "isFixed": false,
+      "isPublic": true,
+      "catBreedId": 5,
+      "userId": 5,
+      "catSexId": 1
+    },
+    {
+      "id": 6,
+      "name": "Oreo",
+      "pictureUrl": "https://i.imgur.com/GlyfQd4.jpeg",
+      "weight": 20,
+      "age": 2,
+      "isSocial": false,
+      "isFixed": true,
+      "isPublic": true,
+      "catBreedId": 1,
+      "userId": 1,
+      "catSexId": 2
+    },
+    {
+      "id": 12,
+      "name": "Milo",
+      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
+      "weight": 10,
+      "age": 3,
+      "isSocial": true,
+      "isFixed": true,
+      "isPublic": true,
+      "catBreedId": 1,
+      "userId": 6,
+      "catSexId": 1
+    },
+    {
+      "id": 13,
+      "name": "Oliver",
+      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
+      "weight": 12,
+      "age": 5,
+      "isSocial": true,
+      "isFixed": false,
+      "isPublic": true,
+      "catBreedId": 2,
+      "userId": 7,
+      "catSexId": 1
+    },
+    {
+      "id": 14,
+      "name": "Simba",
+      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
+      "weight": 11,
+      "age": 4,
+      "isSocial": false,
+      "isFixed": true,
+      "isPublic": false,
+      "catBreedId": 3,
+      "userId": 8,
+      "catSexId": 2
+    },
+    {
+      "id": 15,
+      "name": "Luna",
+      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
+      "weight": 9,
+      "age": 2,
+      "isSocial": true,
+      "isFixed": true,
+      "isPublic": true,
+      "catBreedId": 4,
+      "userId": 9,
+      "catSexId": 2
+    },
+    {
+      "id": 16,
+      "name": "Chloe",
+      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
+      "weight": 8,
+      "age": 1,
+      "isSocial": true,
+      "isFixed": false,
+      "isPublic": false,
+      "catBreedId": 5,
+      "userId": 10,
+      "catSexId": 1
+    },
+    {
+      "id": 18,
+      "name": "Zoe",
+      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
+      "weight": 7,
+      "age": 3,
+      "isSocial": true,
+      "isFixed": true,
+      "isPublic": true,
+      "catBreedId": 7,
+      "userId": 12,
+      "catSexId": 2
+    },
+    {
+      "id": 23,
+      "name": "Chowder",
+      "pictureUrl": "https://i.imgur.com/36Th0GL.jpeg",
+      "weight": 1,
+      "age": 1,
+      "isSocial": false,
+      "isFixed": true,
+      "isPublic": true,
+      "catBreedId": 1,
+      "userId": 11,
+      "catSexId": 1
+    },
+    {
+      "id": 24,
+      "name": "Joji",
+      "pictureUrl": "https://i.imgur.com/hXJQ6r1.jpeg",
+      "weight": 20,
+      "age": 1,
+      "isSocial": false,
+      "isFixed": true,
+      "isPublic": true,
+      "catBreedId": 1,
+      "userId": 11,
+      "catSexId": 2
+    },
+    {
+      "id": 25,
+      "name": "Death, Destroyer of Worlds",
+      "pictureUrl": "https://i.imgur.com/uJHgSC8.png",
+      "weight": 0,
+      "age": 10000,
+      "isSocial": false,
+      "isFixed": false,
+      "isPublic": true,
+      "catBreedId": 1,
+      "userId": 17,
+      "catSexId": 3
+    },
+    {
+      "id": 27,
+      "name": "Shadow",
+      "pictureUrl": "https://i.imgur.com/zgGNjmG.png",
+      "weight": 101,
+      "age": 100,
+      "isSocial": false,
+      "isFixed": false,
+      "isPublic": false,
+      "catBreedId": 14,
+      "userId": 11,
+      "catSexId": 1
+    }
+  ],
+  "feedingSchedules": [
+    {
+      "id": 1,
+      "firstTime": "09:01",
+      "secondTime": "09:02",
+      "thirdTime": "09:03",
+      "catEntryId": 23
+    }
+  ],
+  "catBreeds": [
+    {
+      "id": 1,
+      "name": "American Shorthair"
+    },
+    {
+      "id": 2,
+      "name": "Abyssinian"
+    },
+    {
+      "id": 3,
+      "name": "Aegean"
+    },
+    {
+      "id": 4,
+      "name": "American Bobtail"
+    },
+    {
+      "id": 5,
+      "name": "American Curl"
+    },
+    {
+      "id": 6,
+      "name": "American Ringtail"
+    },
+    {
+      "id": 7,
+      "name": "American Wirehair"
+    },
+    {
+      "id": 8,
+      "name": "Aphrodite Giant"
+    },
+    {
+      "id": 9,
+      "name": "Arabian Mau"
+    },
+    {
+      "id": 10,
+      "name": "Asian"
+    },
+    {
+      "id": 11,
+      "name": "Asian Semi-longhair"
+    },
+    {
+      "id": 12,
+      "name": "Australian Mist"
+    },
+    {
+      "id": 13,
+      "name": "Balinese"
+    },
+    {
+      "id": 14,
+      "name": "Bambino"
+    },
+    {
+      "id": 15,
+      "name": "Bengal"
+    },
+    {
+      "id": 16,
+      "name": "Birman"
+    },
+    {
+      "id": 17,
+      "name": "Bombay"
+    },
+    {
+      "id": 18,
+      "name": "Brazilian Shorthair"
+    },
+    {
+      "id": 19,
+      "name": "British Longhair"
+    },
+    {
+      "id": 20,
+      "name": "Burmese"
+    },
+    {
+      "id": 21,
+      "name": "Burmilla"
+    },
+    {
+      "id": 22,
+      "name": "California Spangled"
+    },
+    {
+      "id": 23,
+      "name": "Chantilly-Tiffany"
+    },
+    {
+      "id": 24,
+      "name": "Chartreux"
+    },
+    {
+      "id": 25,
+      "name": "Chausie"
+    },
+    {
+      "id": 26,
+      "name": "Colorpoint Shorthair"
+    },
+    {
+      "id": 27,
+      "name": "Cornish Rex"
+    },
+    {
+      "id": 28,
+      "name": "Cymric, Manx Longhair or Long-haired Manx"
+    },
+    {
+      "id": 29,
+      "name": "Cyprus"
+    },
+    {
+      "id": 30,
+      "name": "Devon Rex"
+    },
+    {
+      "id": 31,
+      "name": "Donskoy or Don Sphynx"
+    },
+    {
+      "id": 32,
+      "name": "Dragon Li or Chinese Li Hua"
+    },
+    {
+      "id": 33,
+      "name": "Dwelf"
+    },
+    {
+      "id": 34,
+      "name": "Egyptian Mau"
+    },
+    {
+      "id": 35,
+      "name": "European Shorthair"
+    },
+    {
+      "id": 36,
+      "name": "Exotic Shorthair"
+    },
+    {
+      "id": 37,
+      "name": "Foldex"
+    },
+    {
+      "id": 38,
+      "name": "German Rex"
+    },
+    {
+      "id": 39,
+      "name": "Havana Brown"
+    },
+    {
+      "id": 40,
+      "name": "Highlander"
+    },
+    {
+      "id": 41,
+      "name": "Himalayan or Colorpoint Persian"
+    },
+    {
+      "id": 42,
+      "name": "Japanese Bobtail"
+    },
+    {
+      "id": 43,
+      "name": "Javanese or Colorpoint Longhair"
+    },
+    {
+      "id": 44,
+      "name": "Kanaani"
+    },
+    {
+      "id": 45,
+      "name": "Karelian Bobtail"
+    },
+    {
+      "id": 46,
+      "name": "Khao Manee"
+    },
+    {
+      "id": 47,
+      "name": "Kinkalow"
+    },
+    {
+      "id": 48,
+      "name": "Korat"
+    },
+    {
+      "id": 49,
+      "name": "Korean Bobtail"
+    },
+    {
+      "id": 50,
+      "name": "Korn Ja or Konja"
+    },
+    {
+      "id": 51,
+      "name": "Kurilian Bobtail or Kuril Islands Bobtail"
+    },
+    {
+      "id": 52,
+      "name": "Lambkin"
+    },
+    {
+      "id": 53,
+      "name": "LaPerm"
+    },
+    {
+      "id": 54,
+      "name": "Lykoi"
+    },
+    {
+      "id": 55,
+      "name": "Maine Coon"
+    },
+    {
+      "id": 56,
+      "name": "Manx"
+    },
+    {
+      "id": 57,
+      "name": "Mekong Bobtail"
+    },
+    {
+      "id": 58,
+      "name": "Minskin"
+    },
+    {
+      "id": 59,
+      "name": "Minuet"
+    },
+    {
+      "id": 60,
+      "name": "Munchkin"
+    },
+    {
+      "id": 61,
+      "name": "Nebelung"
+    },
+    {
+      "id": 62,
+      "name": "Neva Masquerade"
+    },
+    {
+      "id": 63,
+      "name": "Norwegian Forest cat"
+    },
+    {
+      "id": 64,
+      "name": "Ocicat"
+    },
+    {
+      "id": 65,
+      "name": "Oriental Bicolor"
+    },
+    {
+      "id": 66,
+      "name": "Oriental Longhair"
+    },
+    {
+      "id": 67,
+      "name": "Oriental Shorthair"
+    },
+    {
+      "id": 68,
+      "name": "Persian"
+    },
+    {
+      "id": 69,
+      "name": "Peterbald"
+    },
+    {
+      "id": 70,
+      "name": "Pixie-bob"
+    },
+    {
+      "id": 71,
+      "name": "Ragamuffin"
+    },
+    {
+      "id": 72,
+      "name": "Ragdoll"
+    },
+    {
+      "id": 73,
+      "name": "Raas"
+    },
+    {
+      "id": 74,
+      "name": "Russian Blue"
+    },
+    {
+      "id": 75,
+      "name": "Russian White, Russian Black and Russian Tabby"
+    },
+    {
+      "id": 76,
+      "name": "Sam Sawet"
+    },
+    {
+      "id": 77,
+      "name": "Savannah"
+    },
+    {
+      "id": 78,
+      "name": "Scottish Fold"
+    },
+    {
+      "id": 79,
+      "name": "Selkirk Rex"
+    },
+    {
+      "id": 80,
+      "name": "Serengeti"
+    },
+    {
+      "id": 81,
+      "name": "Siamese"
+    },
+    {
+      "id": 82,
+      "name": "Siberian"
+    },
+    {
+      "id": 83,
+      "name": "Singapura"
+    },
+    {
+      "id": 84,
+      "name": "Snowshoe"
+    },
+    {
+      "id": 85,
+      "name": "Sokoke"
+    },
+    {
+      "id": 86,
+      "name": "Somali"
+    },
+    {
+      "id": 87,
+      "name": "Sphynx"
+    },
+    {
+      "id": 88,
+      "name": "Suphalak"
+    },
+    {
+      "id": 89,
+      "name": "Thai"
+    },
+    {
+      "id": 90,
+      "name": "Thai Lilac, Thai Blue Point and Thai Lilac Point"
+    },
+    {
+      "id": 91,
+      "name": "Tonkinese"
+    },
+    {
+      "id": 92,
+      "name": "Toybob"
+    },
+    {
+      "id": 93,
+      "name": "Toyger"
+    },
+    {
+      "id": 94,
+      "name": "Turkish Angora"
+    },
+    {
+      "id": 95,
+      "name": "Turkish Van"
+    },
+    {
+      "id": 96,
+      "name": "Turkish Vankedisi"
+    },
+    {
+      "id": 97,
+      "name": "Ukrainian Levkoy"
+    },
+    {
+      "id": 98,
+      "name": "York Chocolate"
+    }
+  ]
+}

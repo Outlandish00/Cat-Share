@@ -1,0 +1,124 @@
+fieldset {
+  border: none;
+}
+
+.container-login {
+  display: flex;
+  position: absolute; /* Use absolute positioning */
+  top: 50%; /* Position the element 50% from the top */
+  left: 50%; /* Position the element 50% from the left */
+  transform: translate(-50%, -50%);
+  width: 75rem;
+  height: 50rem;
+  border-radius: 20%;
+  background-color: #b6dcfe;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-link {
+  width: 200px;
+  align-self: center;
+}
+
+.cat-share-logo {
+  display: flex;
+  width: 250px;
+  align-self: center;
+}
+
+.log-in-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 100px;
+}
+
+.log-in-header h1 {
+  color: black;
+  margin: 0;
+  font-size: 8rem;
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
+.sign-in-text {
+  border-bottom: black solid 12px;
+  padding-bottom: 40px;
+  font-size: 4rem;
+  margin-top: 0;
+  border-top: 0;
+  color: black;
+  margin-bottom: 0;
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
+.bottom-half-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: black;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
+#email-input,
+#email-text {
+  margin-bottom: 30px;
+}
+
+.email-input {
+  margin-right: 20px;
+  font-size: 30px;
+  font-family: "Faculty Glyphic", sans-serif;
+}
+.password-input {
+  margin-right: 20px;
+  font-size: 30px;
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
+body {
+  background-color: #b6dcfe;
+}
+
+.form-group input {
+  display: flex;
+  background-color: white;
+  color: black;
+  align-items: center;
+  height: 40px; /* Set a consistent height */
+  width: 250px;
+  border-radius: 10px;
+  font-family: "Faculty Glyphic", sans-serif;
+}
+
+.login-btn {
+  width: 30rem;
+  height: 2.5rem;
+  padding: 0;
+  border: none;
+  background-color: #81f7e5;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+#root {
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  background-color: #b6dcfe;
+}
